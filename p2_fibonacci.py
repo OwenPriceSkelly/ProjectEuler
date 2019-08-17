@@ -2,7 +2,7 @@
 import math
 
 def memo(f):
-    cache = []
+    cache = {}
     def memoize(x):
         if x not in cache:
             cache[x] = f(x)
@@ -16,7 +16,7 @@ def fib(n):
 
 
 
-def result(n=4000000):
+def probem_2(n=4000000):
     """
     Problem 2
     By considering the terms in the Fibonacci sequence whose
@@ -24,8 +24,11 @@ def result(n=4000000):
     even-valued terms.
     """
     i = sum = 0
-    while fib(i) < n:
+    while fib(i) <= n:
         if fib(i) % 2 == 0:
             sum += fib(i)
         i += 1
-    return sum  
+    return sum
+
+
+print(probem_2())

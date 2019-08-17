@@ -11,3 +11,4 @@ def fizzbang(n):
         elif i % 5 == 0:
             list.append(i)
     return sum(list)
+print(fizzbang(1000))
