@@ -20,7 +20,7 @@ def numDivisors(n):
         if n % i == 0: count += 2
         if i * i == n: count -= 1
     return count
-    
+
 t0 = time.time()
 print(divisibleTriangleNumber(500))
 print(time.time()-t0)
